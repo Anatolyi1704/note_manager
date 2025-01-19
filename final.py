@@ -8,5 +8,13 @@ content = input("Введите содержание заметки: ")
 status = input ("Введите статус заметки: ")
 created_date = input ("Введите дату создания (в формате ДД.ММ.ГГГГ): ")
 issue_date = input ("Введите дату окончания (в формате ДД.ММ.ГГГГ): ")
-note = [username, title, content, status, created_date[0:5], issue_date[0:5], title_0]
+note = {
+    "Имя пользователя: " : username,
+    "Заголовок:" : title,
+    "Содержание:" : content,
+    "Статус:" : status,
+    "Дата создания:" : created_date[0:5],
+    "Дата окончания:" : issue_date[0:5],
+    "Подзаголовки:" : title_0
+}
 print(note)
